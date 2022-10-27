@@ -4,27 +4,30 @@
  * and open the template in the editor.
  */
 package test;
-import entities.Planing;
-import service.PlaningCRUD;
+
+import entities.User;
+import services.CRUD;
 import utils.MyDB;
+
 /**
  *
- * @author Balcem
+ * @author Admin
  */
 public class TestMain {
-     public static void main(String[] args) {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
         MyDB c =MyDB.getInstance();
-       Planing P1=new Planing(7544,3,1,"esb@g","az19",50);
-        PlaningCRUD cc=new PlaningCRUD();
+        User U1=new User(22,"nadhir","homme","esb@g","az19","nab","bk","518197","technicien","jeudi","10h","plombier");
+        CRUD cc=new CRUD();
         
         
-     
-        
-      cc.ajouterPlaning(P1);
-     //   cc.modifierUser(P1);
-     // cc.supprimerUser(24);
-     //   cc.AfficherUser().foprEach(System.out::println);
+       // cc.ajouterUser(U1);
+        //cc.modifierUser(U1);
+     //  cc.supprimerUser(22);
+        cc.AfficherUser().forEach(System.out::println);
     }
     
 }
-    
