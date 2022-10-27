@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/UpServe/src/gui/LoginController.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/UpServe/src/entities/Technicien.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/UpServe/src/gui/Luncher.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/UpServe/src/entities/Admin.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/UpServe/src/entities/Client.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/UpServe/src/gui/Login.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/UpServe/src/gui/CreecompteController.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/UpServe/src/gui/Luncheradmin.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/UpServe/src/entities/User.java</file>
+        </group>
+    </open-files>
 </project-private>
