@@ -25,7 +25,7 @@ import utils.MyDB;
  * @author Balcem
  */
 public class PlaningCRUD implements InterfaceCrud {
-     Connection conx = (Connection) MyDB.getInstance().getConnection();
+     Connection conx = (Connection) MyDB.getInstance().getConnexion();
    
      
      @Override

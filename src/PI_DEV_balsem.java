@@ -28,7 +28,7 @@ public class PI_DEV_balsem extends Application {
            
         Parent root;
         try {
-             root=FXMLLoader.load(getClass().getResource("gestionplaninig.fxml"));
+             root=FXMLLoader.load(getClass().getResource("GUI/UsersList/gestionplaninig.fxml"));
              Scene scene = new Scene(root);
         
         primaryStage.setTitle("home");
