@@ -26,7 +26,7 @@ import utils.MyDB;
  * @author Balcem
  */
 public class RendezvousCRUD {
-     Connection conx = (Connection) MyDB.getInstance().getConnection();
+     Connection conx = (Connection) MyDB.getInstance().getConnexion();
    
      
      

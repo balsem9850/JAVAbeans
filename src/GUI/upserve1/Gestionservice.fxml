@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="716.0" prefWidth="1000.0" styleClass="mainFxmlClass" stylesheets="@accueil.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.upserve1.GestionserviceController">
+   <children>
+      <Button fx:id="ajouterservice" layoutX="283.0" layoutY="465.0" mnemonicParsing="false" onAction="#ajouterservice" text="Ajouter" />
+      <TextField fx:id="idser" layoutX="102.0" layoutY="168.0" prefHeight="34.0" prefWidth="149.0" />
+      <TextField fx:id="descser" layoutX="103.0" layoutY="228.0" />
+      <TextField fx:id="imgser" layoutX="103.0" layoutY="344.0" />
+      <Label layoutX="15.0" layoutY="169.0" prefHeight="25.0" prefWidth="61.0" text="Id service" />
+      <Label layoutX="14.0" layoutY="232.0" text="Description" />
+      <Label layoutX="27.0" layoutY="281.0" text="Type" />
+      <Label layoutX="27.0" layoutY="339.0" text="image" />
+      <ChoiceBox fx:id="typeser" layoutX="95.0" layoutY="286.0" prefWidth="150.0" />
+      <Button fx:id="afficherservice" layoutX="445.0" layoutY="465.0" mnemonicParsing="false" onAction="#afficherservice" text="afficher" />
+      <TableView fx:id="TableProd" layoutX="421.0" layoutY="122.0" onMouseClicked="#selectitems" prefHeight="328.0" prefWidth="542.0">
+         <columns>
+            <TableColumn fx:id="collidser" prefWidth="84.0" text="id service" />
+            <TableColumn fx:id="colldescser" prefWidth="248.0" text="description" />
+            <TableColumn fx:id="colltypeser" prefWidth="105.0" text="type" />
+            <TableColumn fx:id="collimgser" prefWidth="101.0" text="image" />
+         </columns>
+      </TableView>
+      <Button fx:id="supprimerservice" layoutX="554.0" layoutY="465.0" mnemonicParsing="false" onAction="#supprimerservice" text="Supprimer" />
+      <Button fx:id="modifierservice" layoutX="699.0" layoutY="465.0" mnemonicParsing="false" onAction="#modifierservice" text="Modifier" />
+      <TextField fx:id="Searchfield" layoutX="455.0" layoutY="46.0" prefHeight="34.0" prefWidth="338.0" promptText="Chercher" styleClass="cherch" stylesheets="@accueil.css" />
+      <Button fx:id="afficherservice" layoutX="809.0" layoutY="46.0" mnemonicParsing="false" onAction="#afficherservice" prefHeight="34.0" prefWidth="72.0" text="Chercher" />
+      <Label fx:id="errid" layoutX="261.0" layoutY="173.0" prefHeight="25.0" prefWidth="118.0" text="Remplir le champs" />
+      <Label fx:id="errdesc" layoutX="271.0" layoutY="228.0" prefHeight="25.0" prefWidth="111.0" text="Remplir le champs" />
+      <Label fx:id="errtype" layoutX="271.0" layoutY="290.0" prefHeight="17.0" prefWidth="111.0" text="Remplir le champs" />
+      <Label fx:id="errimg" layoutX="261.0" layoutY="348.0" prefHeight="17.0" prefWidth="118.0" text="Remplir le champs" />
+   </children>
+</AnchorPane>

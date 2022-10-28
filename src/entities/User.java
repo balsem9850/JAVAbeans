@@ -5,139 +5,135 @@
  */
 package entities;
 
+
+
 /**
  *
- * @author Admin
+ * @admin
  */
 public class User {
-    private int idUser;
-    private String fullName;
-    private String genreUser;
-    private String emailUser;
-    private String mdpUser;
-    private String region;
-    private String municipalite;
-    private String tel;
-    private String role;
-    private String jourTravail;
-    private String heureTravail;
-    private String profession;
+    
+    private int id;
+    private String email,fullname,Username,password;
+    private  String roles="[ROLE_USER]";
+    private String birthday;
+    private int isVerified=0,Isbanned=0;
+    private String photo;
 
-    public User(int idUser, String fullName, String genreUser, String emailUser, String mdpUser, String region, String municipalite, String tel, String role, String jourTravail, String heureTravail, String profession) {
-        this.idUser = idUser;
-        this.fullName = fullName;
-        this.genreUser = genreUser;
-        this.emailUser = emailUser;
-        this.mdpUser = mdpUser;
-        this.region = region;
-        this.municipalite = municipalite;
-        this.tel = tel;
-        this.role = role;
-        this.jourTravail = jourTravail;
-        this.heureTravail = heureTravail;
-        this.profession = profession;
+    public User(String email, String fullname, String Username, String password,String birthday) {
+        this.email = email;
+        this.fullname = fullname;
+        this.Username = Username;
+        this.birthday = birthday;
+        this.password = password;
     }
 
-    public int getIdUser() {
-        return idUser;
+    public User(String email, String fullname, String Username, String password, String birthday, String photo) {
+        this.email = email;
+        this.fullname = fullname;
+        this.Username = Username;
+        this.password = password;
+        this.birthday = birthday;
+        this.photo = photo;
     }
 
-    public void setIdUser(int idUser) {
-        this.idUser = idUser;
+    
+
+    public User() {
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getRoles() {
+        return roles;
+    }
+   
+    public void setRoles(String roles){
+       this.roles=roles;
+    }
+    
+
+    public int getId() {
+        return id;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getGenreUser() {
-        return genreUser;
+    public String getEmail() {
+        return email;
     }
 
-    public void setGenreUser(String genreUser) {
-        this.genreUser = genreUser;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getEmailUser() {
-        return emailUser;
+    public String getFullname() {
+        return fullname;
     }
 
-    public void setEmailUser(String emailUser) {
-        this.emailUser = emailUser;
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
-    public String getMdpUser() {
-        return mdpUser;
+    public String getUsername() {
+        return Username;
     }
 
-    public void setMdpUser(String mdpUser) {
-        this.mdpUser = mdpUser;
+    public void setUsername(String Username) {
+        this.Username = Username;
     }
 
-    public String getRegion() {
-        return region;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setRegion(String region) {
-        this.region = region;
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
-    public String getMunicipalite() {
-        return municipalite;
+    public int getIsVerified() {
+        return isVerified;
     }
 
-    public void setMunicipalite(String municipalite) {
-        this.municipalite = municipalite;
+    public void setIsVerified(int isVerified) {
+        this.isVerified = isVerified;
     }
 
-    public String getTel() {
-        return tel;
+
+    public String getPhoto() {
+        return photo;
     }
 
-    public void setTel(String tel) {
-        this.tel = tel;
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 
-    public String getRole() {
-        return role;
+    public String getPassword() {
+        return password;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String getJourTravail() {
-        return jourTravail;
+    public int getIsbanned() {
+        return Isbanned;
     }
 
-    public void setJourTravail(String jourTravail) {
-        this.jourTravail = jourTravail;
-    }
-
-    public String getHeureTravail() {
-        return heureTravail;
-    }
-
-    public void setHeureTravail(String heureTravail) {
-        this.heureTravail = heureTravail;
-    }
-
-    public String getProfession() {
-        return profession;
-    }
-
-    public void setProfession(String profession) {
-        this.profession = profession;
+    public void setIsbanned(int Isbanned) {
+        this.Isbanned = Isbanned;
     }
 
     @Override
     public String toString() {
-        return "User{" + "idUser=" + idUser + ", fullName=" + fullName + ", genreUser=" + genreUser + ", emailUser=" + emailUser + ", mdpUser=" + mdpUser + ", region=" + region + ", municipalite=" + municipalite + ", tel=" + tel + ", role=" + role + ", jourTravail=" + jourTravail + ", heureTravail=" + heureTravail + ", profession=" + profession + '}';
+        return "User{" + "id=" + id + ", email=" + email + ", fullname=" + fullname + ", Username=" + Username + ", password=" + password + ", roles=" + roles + ", birthday=" + birthday + ", isVerified=" + isVerified + ", Isbanned=" + Isbanned + ", photo=" + photo + '}';
     }
     
     
+    
+    
+    
+    
+            
 }
+

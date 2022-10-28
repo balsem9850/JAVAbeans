@@ -12,34 +12,45 @@ import java.sql.Statement;
 
 /**
  *
- * @author Admin
+ * @admin
  */
 public class MyDB {
-    
-   String url ="jdbc:mysql://localhost:3306/upserve" ; 
-    String user = "root" ;
-    String pwd = "" ; 
-    Statement st ;
-    private static MyDB instance ;
-    private Connection conx ;
-    
-    private MyDB () {
+    //Design Patter - Singleton
+
+    public String url = "jdbc:mysql://localhost:3306/";
+    public String login = "root";
+    public String pwd = "";
+    public Connection con;
+    public static MyDB instance;
+
+    private MyDB() {
+
         try {
-            conx = DriverManager.getConnection(url,user,pwd) ;
-            System.out.println("Connexion etablie !");
-        } catch (SQLException ex) {
-            System.err.println(ex.getMessage()) ;
+            con = DriverManager.getConnection(url, login, pwd);
+            Statement smt = con.createStatement();
+            String sql = "CREATE DATABASE IF NOT EXISTS upserve";
+            smt.executeUpdate(sql);
+            System.out.println("Database created or already exists ! ");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/upserve", login, pwd);
+            System.out.println(" Connected ! ");
         }
+        catch (SQLException ex) {
+                System.out.println(ex.getMessage());
+        }
+//        finally {
+//            cnx.close();
+//        }
     }
-    
-        public static MyDB getInstance() {
-           
-            if (instance ==null) 
-                instance = new MyDB () ;
-            return instance ;
-        }
-        
-        public Connection getConnection() {
-            return conx ;
-        }
+
+    public Connection getConnexion() {
+        return con;
     }
+
+    public static MyDB getInstance() {
+        if (instance == null) {
+            instance = new MyDB();
+        }
+        return instance;
+    }
+
+}

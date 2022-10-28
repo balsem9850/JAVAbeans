@@ -1,0 +1,60 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+  -fx-background-color:   linear-gradient(to right, #9796f0, #fbc7d4); 
+ 
+}
+
+.borderPanefxml{
+    
+   
+}
+.headerfxml{
+     
+    -fx-background-color: white;
+    -fx-background-radius:30;
+    -fx-opacity:0.4;
+    
+}
+.imglogo{
+       -fx-opacity:1;
+}
+
+.btn_accueil{
+   
+     -fx-background-color: transparent;
+    -fx-background-radius:30;
+    -fx-text-fill: white;
+    -fx-font-size:15px ;
+   -fx-font-weight: Bold;
+    
+    
+}
+.btn_accueil:hover{
+    -fx-background-color: white;
+   -fx-text-fill: black;
+}
+ .icon_accueil:hover{
+  -fx-rotate:  180;
+    
+}
+
+.btndem{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-font-size:17px ;
+    -fx-font-weight: Bold;
+    -fx-alignment: bottom-center;
+
+}
+.btndem:hover{
+    
+    
+
+}
+
+.cherch{
+    -fx-border-radius: 30px;
+}

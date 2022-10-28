@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="796.0" prefWidth="1093.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.upserve1.AccueilController">
+    <stylesheets>
+        <URL value="@accueil.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="-1.0" prefHeight="796.0" prefWidth="1093.0" styleClass="borderPanefxml" stylesheets="@accueil.css">
+         <top>
+            <Pane prefHeight="83.0" prefWidth="1083.0" styleClass="headerfxml" stylesheets="@accueil.css" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets left="5.0" right="5.0" top="10.0" />
+               </BorderPane.margin>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="650.0" prefWidth="240.0" styleClass="headerfxml" stylesheets="@accueil.css" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="5.0" top="10.0" />
+               </BorderPane.margin>
+            </Pane>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="headerfxml" stylesheets="@accueil.css" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </BorderPane.margin>
+            </Pane>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="796.0" prefWidth="1093.0">
+         <top>
+            <Pane prefHeight="95.0" prefWidth="1093.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="221.0" layoutX="7.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../project/css/l-removebg-preview%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="73.0" fitWidth="74.0" layoutX="1012.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../project/css/icons8-user-100.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="690.0" prefWidth="245.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button graphicTextGap="0.0" layoutY="182.0" mnemonicParsing="false" onAction="#ajtservinterface" prefHeight="115.0" prefWidth="238.0" styleClass="btn_accueil" stylesheets="@accueil.css" text="Gestion des services" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" styleClass="icon_accueil">
+                           <image>
+                              <Image url="@../project/css/icons8-add-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutY="364.0" mnemonicParsing="false" onAction="#consulterservice" prefHeight="115.0" prefWidth="238.0" styleClass="btn_accueil" stylesheets="@accueil.css" text="Consulter nos services">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../project/css/icons8-eye.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Pane prefHeight="669.0" prefWidth="840.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
