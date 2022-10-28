@@ -5,6 +5,7 @@
  */
 package utils;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,16 +13,15 @@ import java.sql.Statement;
 
 /**
  *
- * @author Admin
+ * @author Balcem
  */
 public class MyDB {
-    
-   String url ="jdbc:mysql://localhost:3306/upserve" ; 
+     String url ="jdbc:mysql://localhost:3306/upserve" ; 
     String user = "root" ;
     String pwd = "" ; 
     Statement st ;
     private static MyDB instance ;
-    private Connection conx ;
+     Connection conx ;
     
     private MyDB () {
         try {
@@ -38,8 +38,8 @@ public class MyDB {
                 instance = new MyDB () ;
             return instance ;
         }
-        
-        public Connection getConnection() {
-            return conx ;
-        }
-    }
+     public  Connection getConnection(){
+         return conx;
+     }
+   
+}
